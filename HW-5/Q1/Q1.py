@@ -1,14 +1,12 @@
-def mtr_transpose(X):
-    result=[]
-    for j in range(len(X[0])):
-        row=[]
-        for i in range(len(X)):
-            row.append(X[i][j])
-        print(row)
+punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
 
-            
-A = [[10, 8],
-    [2, 4],
-    [1, 7]]
+x = "Hello in 36-650, & other MSP courses."
 
-mtr_transpose(A)
+def punct_remove(x):
+    x_no_punc = ""
+    for char in x:
+        if char not in punctuations:
+            x_no_punc = x_no_punc + char
+    print(x_no_punc)
+
+punct_remove(x)
