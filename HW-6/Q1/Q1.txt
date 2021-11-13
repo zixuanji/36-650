@@ -1,0 +1,1 @@
+Tuples are the same as lists when we access or search elements. We are able to access or search elements in tuple anytime. However, data once entered into the tuple cannot be changed no matter what. Then, we should use tuple here.
