@@ -1,3 +1,9 @@
+# Question 5
+
+#In summary, we can use 
+#if not expression to conditionally execute a block of statements only if the value is not empty or not False.
+
+
 class Node(object):
     def __init__(self, data):
         self.data = data
@@ -44,28 +50,6 @@ class LinkedList(object):
             while (current.next):
                 current = current.next
             current.next = node 
-
-    # Delete a node in a linked list
-    def delete(self, data):
-        if not self.head:
-            return
-
-        temp = self.head
-
-        # Check if head node is to be deleted
-        if self.head.data == data:
-            self.head = temp.next
-            print("Deleted node is " + str(self.head.data))
-            return
-
-        while temp.next:
-            if temp.next.data == data:
-                print("Node deleted is " + str(temp.next.data))
-                temp.next = temp.next.next
-                return
-            temp = temp.next
-        print("Node not found")
-        return
     
     # remove duplicates
     def remove_dups(self):
@@ -84,7 +68,7 @@ class LinkedList(object):
             c = c.next
 
 first_node = Node(11)
-linked_list = LinkedList(first_node) ## creating a linked list can start with a empty list and insert later
+linked_list = LinkedList(first_node)
 linked_list.insert(3)
 linked_list.insert(6)
 linked_list.insert(5)
@@ -100,4 +84,4 @@ linked_list.print_list()
 
 linked_list.remove_dups()
 print("After removing the duplications, the Linked List is:")
-linked_list.print_list()
+linked_list.print_list()s
